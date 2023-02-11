@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Webpack Project</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="styles.css">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script async
+            src="../dist/bundle.js"></script>
+</head>
+
+<body>
+    <h1>Yucon Website-Analyzer</h1>
+    <p>Einfach die Webadresse in das Inputfeld eingeben:</p>
+    <input type="text"
+           id="urlInput"
+           placeholder="https://www...">
+    <button id="submitButton"
+            type="submit">PageSpeed starten</button>
+    <div id="result"></div>
+
+    <!-- <div id="analyse"></div> -->
+    <button id="generate">Download</button>
+
+    <div id="analyse"
+         class="container">
+        <div class="row">
+            <div>
+                <img src="../assets/yucon_digital_logo.png"
+                     alt="Yucon Logo"
+                     height="200"
+                     width="auto">
+            </div>
+            <div>
+                <div class="headline">Webseiten-Analyse</div>
+            </div>
+            <div>
+                <img src="../assets/snookerfy_logo.png"
+                     alt="Snookerfy Logo"
+                     height="100"
+                     width="auto">
+            </div>
+        </div>
+        <div class="row">
+            <div class="colwhite">
+                <div class="row start">
+                    <div class="colwhite">
+                        <div id="url"></div>
+                        <p>webseite_screenshot</p>
+                    </div>
+                    <!-- <div class="padding">firmen_logo</div> -->
+                </div>
+                <div class="line"></div>
+                <div class="padding">
+                    <div class="center">
+                        <div class="subheadline">Ergebnis:</div>
+                    </div>
+                    <div class="row">
+                        <div class="padding center ">
+                            <div class="transparent">
+                                <h3>Checkmark</h3>
+                                <br>
+                            </div>
+                            <div class="text2x"
+                                 contenteditable="true">✅
+                                👍
+                                ❌</div>
+                        </div>
+                        <div class="padding center">
+                            <h3>Leistung<br>Mobile:</h3>
+                            <div class="text2x"
+                                 id="mobile_performance"
+                                 contenteditable="true">0%</div>
+                        </div>
+                        <div class="padding center">
+                            <h3>Leistung<br>PC:</h3>
+                            <div class="text2x"
+                                 id="desktop_performance"
+                                 contenteditable="true">0%</div>
+                        </div>
+                        <div class="padding center">
+                            <h3>Effizienz<br>SEO:</h3>
+                            <div class="text2x"
+                                 id="mobile_seo"
+                                 contenteditable="true">0%</div>
+                        </div>
+                        <!-- <div class="padding center">
+                            <h3>Effizienz SEO (Desktop):</h3>
+                            <div id="desktop_seo"
+                                 contenteditable="true"></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <h2 contenteditable="true">Analyse DSGVO:</h2>
+                    <div class="text"
+                         contenteditable="true">Ihre Website entspricht der DSGVO, herzlichen Glückwunsch.</div>
+                </div>
+                <div class="col">
+                    <h2 contenteditable="true">Analyse Performance:</h2>
+                    <div class="text"
+                         contenteditable="true">Performance Top. Mobile könnte man die Bilder noch in neueren
+                        Formate bereitstellen.</div>
+                </div>
+                <div class="col">
+                    <h2 contenteditable="true">Tipps:</h2>
+                    <div class="row">
+                        <div class="text"
+                             contenteditable="true">✅ ❌ </div>
+                    </div>
+                    <div class="center">
+                        <button class="cta_button"
+                                type="button">Kontaktieren Sie uns!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script async
+            src="../dist/bundle.js"></script> -->
+</body>
+
+</html>
