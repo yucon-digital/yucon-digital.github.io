@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Yucon Website Analyzer</title>
+    <title>My Webpack Project</title>
     <link rel="stylesheet"
           type="text/css"
           href="styles.css">
@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script async
-            src="bundle.js"></script>
+            src="../dist/bundle.js"></script>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
             <div>
                 <img src="../assets/yucon_digital_logo.png"
                      alt="Yucon Logo"
-                     height="200"
+                     height="180"
                      width="auto">
             </div>
             <div>
@@ -49,28 +49,24 @@
         <div class="row">
             <div class="colwhite">
                 <div class="row start">
-                    <div class="colwhite">
-                        <div id="url"></div>
-                        <p>webseite_screenshot</p>
+                    <div class="colwhite center">
+                        <div class="row start">
+                            <div class="screenshot">
+                                <div class="img-wrapper">
+                                    <img id="screenshot_desktop" />
+                                </div>
+                                <div id="url"></div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- <div class="padding">firmen_logo</div> -->
                 </div>
                 <div class="line"></div>
                 <div class="padding">
                     <div class="center">
                         <div class="subheadline">Ergebnis:</div>
                     </div>
-                    <div class="row">
-                        <div class="padding center ">
-                            <div class="transparent">
-                                <h3>Checkmark</h3>
-                                <br>
-                            </div>
-                            <div class="text2x"
-                                 contenteditable="true">✅
-                                👍
-                                ❌</div>
-                        </div>
+                    <div class="row center">
+
                         <div class="padding center">
                             <h3>Leistung<br>Mobile:</h3>
                             <div class="text2x"
@@ -84,16 +80,17 @@
                                  contenteditable="true">0%</div>
                         </div>
                         <div class="padding center">
-                            <h3>Effizienz<br>SEO:</h3>
+                            <h3>Mobile Effizienz<br>SEO:</h3>
                             <div class="text2x"
                                  id="mobile_seo"
                                  contenteditable="true">0%</div>
                         </div>
-                        <!-- <div class="padding center">
-                            <h3>Effizienz SEO (Desktop):</h3>
-                            <div id="desktop_seo"
-                                 contenteditable="true"></div>
-                        </div> -->
+                        <div class="padding center">
+                            <h3>PC Effizienz<br>SEO:</h3>
+                            <div class="text2x"
+                                 id="desktop_seo"
+                                 contenteditable="true">0%</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,6 +120,9 @@
             </div>
         </div>
     </div>
+
+    <!-- <script async
+            src="../dist/bundle.js"></script> -->
 </body>
 
 </html>
